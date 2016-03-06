@@ -1,0 +1,48 @@
+package epicInterviewPreparation;
+
+public class createAnEquation {
+	
+	public static void main(String Args[]){
+		printSplits("121224");
+		
+	}
+	
+	
+	public static void printSplits(String f){
+		
+		int num1 = 0;
+		int num2 = 0;
+		int num3 = 0;
+		int n = f.length()/2; 
+		//System.out.println(n); 
+		for(int i=0;i<n;i++) {
+			for(int j=i;j<n;j++) 
+			{ 
+				try {
+					num1 = Integer.parseInt(f.substring(0, i+1)); 
+					num2 = Integer.parseInt(f.substring(i+1, j+1)); 
+					num3 = Integer.parseInt(f.substring(j+1,f.length())); 	
+				check(num1,num2,num3);				
+				} catch (Exception e){
+					continue;
+				}
+			}
+		}	
+	}
+	
+	public static void check(int num1, int num2, int num3){
+		if(num1 + num2 == num3){
+			System.out.println(num1 + "+" + num2 + "=" + num3);
+		}
+		if(num1 + num3 == num2){
+			System.out.println(num1 + "+" + num3 + "=" + num2);
+		}
+		if(num3 + num2 == num1){
+			System.out.println(num3 + "+" + num2 + "=" + num1);
+		}
+		
+	}
+	
+	
+
+}

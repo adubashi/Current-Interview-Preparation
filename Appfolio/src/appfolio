@@ -1,0 +1,27 @@
+App Folio problems:
+
+public void flip(int x, int y) {
+    int offset = y * rowSize + (x / 32);
+    bits[offset] ^= 1 << (x & 0x1f);
+  }
+  
+ 
+ 
+ Interview question help: " You will be given an API which would offers you 50 restaurants in an area.
+ And you have four coordinates for a rectangle, how you will get all the restaurants in this area."
+ 
+ The api returns 50 restaurants at a time.
+ 
+ public static void findRestaurants(Rectangle rect, api) {
+	Set<Restaurant>  set = new Set<Restaurant>();
+	set = api.poll(); 
+	if(set.size() > 50){
+	   resultSet = findRestaurants(rect/2,api);
+	   resultSet2 = findRestaurants(rect/2,api); 
+	   
+	   return combinedSets(resultSet,resultSet2,set);
+	} else {
+	   return set; 
+	 
+	}
+ }

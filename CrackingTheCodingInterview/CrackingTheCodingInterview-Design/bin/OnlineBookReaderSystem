@@ -1,0 +1,18 @@
+Assumptions/Questions to ask:
+1. User membership creation and extension
+2. Searching the database of books
+3. Reading a book
+4. Only one active user at a time
+5. Only one active book by this user 
+
+
+What are the objects required?
+User
+Book
+Library
+
+Classes:
+Library: Uses a hashtable to add and retrieve books
+UserManager: Uses a hashtable to add retrieve users
+Display: displays status and turns the page
+User and Book: Simply hold the data for those two objects

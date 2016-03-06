@@ -1,0 +1,46 @@
+package epicInterviewPreparation;
+
+public class twoHalves {
+	
+	
+	
+	public static void main(String Args[]){
+		int i = 19967;
+		int j = 1000;
+		
+		maxHalves(i,j);
+		
+		
+	}
+	
+	
+	
+	public static void maxHalves(int i, int j) {
+		int firstValue, secondValue;
+
+		int iLength = String.valueOf(i).length();
+		int jLength = String.valueOf(j).length();
+
+		if (iLength - jLength == 1) {
+			firstValue = i / j;
+			secondValue = i - firstValue * j;
+			System.out.println("First Value:- " + firstValue
+					+ " second Value:- " + secondValue);
+		} else {
+			System.out.println("Invalid Input");
+		}
+
+	}
+	
+	public static void printHalves(int number){
+		
+		String numberString = String.valueOf(number);
+		for(int i = 0; i < numberString.length(); i++){
+			for(int j = i; j < numberString.length(); j++){
+				System.out.println(numberString.substring(i, j));
+				
+			}
+		}
+	}
+
+}

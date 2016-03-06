@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;printTheStringRepresentation&apos; to &apos;printTheStringRepresentationOfaNumber&apos;&#x0D;&#x0A;- Original project: &apos;CrackingTheCodingInterviewModerate&apos;&#x0D;&#x0A;- Original element: &apos;printTheStringRepresentation&apos;&#x0D;&#x0A;- Renamed element: &apos;printTheStringRepresentationOfaNumber&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;printTheStringRepresentation&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{printTheStringRepresentation.java[printTheStringRepresentation" matchStrategy="1" name="printTheStringRepresentationOfaNumber" qualified="false" references="true" similarDeclarations="false" stamp="1454222125249" textual="false" version="1.0"/>
+</session>

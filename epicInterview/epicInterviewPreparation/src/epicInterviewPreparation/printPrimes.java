@@ -1,0 +1,32 @@
+package epicInterviewPreparation;
+
+import java.util.*;
+
+public class printPrimes {
+	
+	
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		
+		int n  = input.nextInt();
+		
+		
+		boolean[] primes = new boolean[n+1];
+		
+		Arrays.fill(primes, true);
+		
+		for(int i = 2; i*i <= n; i++){
+				for(int j = i; j*i <= n;j++){
+					primes[j*i] = false;
+				}
+
+		}
+		
+		for(int i = 2; i < primes.length;i++){
+			if(primes[i]){
+				System.out.println(i);
+			}
+		}
+	}
+
+}

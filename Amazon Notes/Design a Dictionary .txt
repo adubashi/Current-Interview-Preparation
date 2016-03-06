@@ -1,0 +1,8 @@
+Data structures for a dictionary:
+If all we want to check for is whether a word exists or not, then a simple hash table works well. 
+But there are trade-offs with this approach. You can't iterate through the values alphabetically.
+
+A Trie is a tree data structure that works with a Suffix-Prefix approach. 
+Time: O(M) to find a key where M is the longest length of a word in the Trie
+Complexity to make a Trie: O(N*M) N- number of strings M - longest length of a string 
+Insert and search costs O(key_length), however the memory requirements of trie is O(ALPHABET_SIZE * key_length * N) where N is number of keys in trie.

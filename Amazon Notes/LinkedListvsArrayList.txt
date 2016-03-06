@@ -1,0 +1,20 @@
+LinkedList vs ArrayList 
+LinkedList:
+get: O(n)
+add: O(n)
+add to front: O(1)
+remove: O(n)
+remove from front: O(1)
+
+ArrayList:
+get: O(1)
+add: O(1)( but might be O(n) in the worst case since the array must be resized and copied)
+remove: O(n)
+add at an index: O(n)
+
+Linked list needs to find a position in the list before adding something at that position, so those operations scale to the size of it. 
+ArrayList allows for fast random read access. Adding for removing from anywhere requires shifting all the latter elements over. 
+
+ArrayList is implemented as a resizable array. As more elements are added to ArrayList, its size is increased dynamically. It's elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array.
+
+LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist, but worse on get and set methods.

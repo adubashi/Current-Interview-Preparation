@@ -1,0 +1,10 @@
+package epicInterviewPreparation;
+
+public class printPrimes {
+	
+	
+	public static void main(String Args[]){
+		
+	}
+
+}

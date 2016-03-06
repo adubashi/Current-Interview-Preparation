@@ -1,0 +1,9 @@
+Initialized vs Uninitialized int?
+Java values of simple types such as int/long can't be null so they are initialized by 0.
+
+How is a float stored in memory?	
+In a 32 bit system, Floats are stored in the manner of: 1.0111 * 2^7 or something like that. 
+There is an exponent field, a sign bit and a fraction field.
+
+Pass by Reference vs Pass by Value?
+Pass by reference passes in a reference to an object(pointer) rather then making a copy and passing the entire object.

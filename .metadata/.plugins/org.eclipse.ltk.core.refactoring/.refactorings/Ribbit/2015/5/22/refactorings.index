@@ -1,0 +1,15 @@
+1432597936030	Delete element
+1432599861176	Rename field 'editText1'
+1432599878540	Rename field 'editText2'
+1432599982082	Extracts string 'null' into R.string.Username
+1432600097287	Extracts string 'null' into R.string.username_hint
+1432600180301	Extracts string 'null' into R.string.password_hint
+1432600368552	Extracts string 'null' into R.string.Login
+1432600567535	Extracts string 'null' into R.string.loginButton
+1432600767343	Extracts string 'null' into R.string.sign_up_button
+1432684548344	Extracts string 'null' into R.string.newUsername
+1432684595588	Extracts string 'null' into R.string.passwordHint
+1432684625287	Extracts string 'null' into R.string.newEmail
+1432687784925	Extracts string 'null' into R.string.SignUpParent
+1432691724471	Delete elements
+1432701113590	Extract method 'navigateToLogin'

@@ -1,0 +1,11 @@
+Generic Deck of Cards:
+1. A card class: variable holding the face value, variable holding the suit. 
+  
+2. A Hand class: with an list(ArrayList if implementing in Java), that holds the cards 
+Hand is also able to add cards and holds the score of the entire hand 
+
+ Implementing Blackjack:
+ 
+ -score --> either report the highest score that is not over 21, or report the minimum(which will interpreted as a bust)
+ 
+  

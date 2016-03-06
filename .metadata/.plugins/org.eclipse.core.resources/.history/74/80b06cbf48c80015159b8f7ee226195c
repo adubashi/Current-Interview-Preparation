@@ -1,0 +1,74 @@
+package blackRockInterview;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Question1 {
+	public static final String SEPARATOR = "@";
+    /*
+     * Complete the function below.
+     *
+ 	 * Note: The questions in this test build upon each other. We recommend you
+	 * copy your solutions to your text editor of choice before proceeding to
+	 * the next question as you will not be able to revisit previous questions.
+	 */
+	
+	public static boolean containsSeparator(String input){
+		return input.contains(SEPARATOR);
+	}
+ 
+
+    public static int countHoldings(String input) {
+    	
+    	if(!containsSeparator(input)){
+    		return 0;
+    	}
+    	
+    	
+    	String[] inputArr = input.split(SEPARATOR);
+    	//System.out.println(Arrays.toString(inputArr));
+    	//System.out.println(inputArr.length);
+        return input.split(SEPARATOR).length;
+    }
+    
+    static String printHoldings(String portfolioString) {
+    	int j = countHoldings(portfolioString);
+    	String[] newArr = new String[j];
+    	
+    	String[] inputArr = portfolioString.split(SEPARATOR);
+    	Arrays.sort(inputArr);
+    	System.out.println(Arrays.toString(inputArr));
+    	
+    	for(int i = 0; i < inputArr.length;i++){
+    		String t = inputArr[i];
+    		newArr[i] = Arrays.toString(inputArr[i].split(","));
+    	}
+    	
+    	String endString = Arrays.toString(newArr);
+    	
+    	endString = endString.substring(1,endString.length()-1);
+    	
+    	System.out.println(endString);
+    	
+    	
+        return "";
+    }
+    
+
+
+    public static void main(String[] args) throws IOException{
+    	Scanner in = new Scanner(System.in);
+        String res;
+        String _input;
+        try {
+            _input = in.nextLine();
+        } catch (Exception e) {
+            _input = null;
+        }
+        res = printHoldings(_input);
+        System.out.println(res);
+    }
+
+}

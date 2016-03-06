@@ -1,0 +1,40 @@
+Jigsaw Puzzle:
+
+Edge case, what if the piece is a CORNER
+
+Two classes:
+Edge:
+determines the type of edge each piece is, controls whether a certain edge will fit with other edges
+
+
+Piece:
+Array of edges.
+checks if the piece is a corner piece
+
+Puzzle:
+An array of pieces
+A two dimensional array of the puzzle solution
+
+Array of edges called  inners
+Array of edges called  outers
+Array of edges called flats
+Array of Pieces called corners
+
+A sort method
+A solve method
+//Pseudo code for sorting 
+void sort(){
+ 	for each Piece p in pieces {
+ 		if(p has two flat edges) then add p to corners
+ 		
+ 		for each edge in p.edges{
+ 			if edge is inner then add to inners
+ 			if edge is out then add to inners
+ 		}	
+ 	}
+ }
+ 
+ //Algo for solving
+ 1. Ataches the edge
+ 2. Removes the edge from the list of open edges
+ 3. Finds the next open edge

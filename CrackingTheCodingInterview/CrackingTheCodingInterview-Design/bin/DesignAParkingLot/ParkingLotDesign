@@ -1,0 +1,21 @@
+ParkingLot Design:
+Questions/Assumptions to ask/define?
+1. What types of Vehicles does this parking lot support?(Trucks, SUVs, Busses)
+2. Are there multiple levels? 
+3. What are the mechanics of the parking spots? For example, does a BUS take up he same amount of space as an SUV.
+
+
+Possible Assumptions:
+1. The parking lot has multiple levels. Each level has multiple rows of spots.
+2. The parking lot can park multiple motorcycles, cars, and buses.
+3. The parking lot has motorcycle spots, compact spots, and large spots
+4. A motorcycle can park in any spot
+5. A car can park in either a single compact spot or a single large spot
+6.  A bus can park in five large spots that are consecutive and within the same row. It cannot park in small spots.
+
+
+The Parking lot class is a wrapper class for an array of levels. 
+
+The ParkingSpot class is implemented by having just a variable which represents the size of the spot. We could have implemented
+this by having classes for LargeSpot, CompactSpot, and MotorcycleSpot, which inherit from ParkingSpot. 
+

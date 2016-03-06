@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;CheckIfABtreeBalanced&apos; to &apos;CheckIfaBinaryTreeBalanced&apos;&#x0D;&#x0A;- Original project: &apos;CrackingTheCodingInterviewTreesAndGraphs&apos;&#x0D;&#x0A;- Original element: &apos;CheckIfABtreeBalanced&apos;&#x0D;&#x0A;- Renamed element: &apos;CheckIfaBinaryTreeBalanced&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CheckIfABtreeBalanced&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{CheckIfABtreeBalanced.java[CheckIfABtreeBalanced" matchStrategy="1" name="CheckIfaBinaryTreeBalanced" qualified="false" references="true" similarDeclarations="false" stamp="1451526224051" textual="false" version="1.0"/>
+</session>

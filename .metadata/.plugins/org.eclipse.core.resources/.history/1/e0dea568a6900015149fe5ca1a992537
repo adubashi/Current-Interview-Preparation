@@ -1,0 +1,24 @@
+package epicInterviewPreparation;
+
+public class generateWellOrdered {
+	
+	public static void main(String Args[]){
+		generateWellOrdered(0,-1,4);
+		
+	}
+	
+	
+	
+	//Gradually build up each number
+	//until the length has been reached
+	public static void generateWellOrdered(int number, int prev, int length){
+		if(length == 0){
+			System.out.println(number);
+		} else {
+			for(int i = prev + 1  ; i < 10; i++){
+				generateWellOrdered(number*10 + i,i,length-1);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package epicInterviewPreparation;
+
+public class generateFourDigitNumbers {
+	
+	public static void main(String Args[]){
+		generate("",4);
+		
+	}
+	
+	
+	public static void generate(String temp, int level){
+		if( level == 0){
+			System.out.println(temp);
+		} else {
+			for(int i = 0; i < 10; i++){
+				
+			}
+		}
+	}
+
+}

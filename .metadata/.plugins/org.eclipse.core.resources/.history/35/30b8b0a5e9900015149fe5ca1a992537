@@ -1,0 +1,14 @@
+package epicInterviewPreparation;
+
+import java.util.*;
+
+public class printPrimes {
+	
+	
+	public static void main(String Args[]){
+		Scanner input = new Scanner(System.in);
+		
+		int n  = input.nextInt();
+	}
+
+}

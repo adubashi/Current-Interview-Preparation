@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LinkedListNode.java&apos; to &apos;Amazon/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;CrackingTheCodingInterviewLinkedList&apos;&#x0D;&#x0A;- Destination element: &apos;Amazon/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;LinkedListNode.java&apos;" description="Copy compilation unit" destination="=Amazon/src&lt;" element1="/src&lt;{LinkedListNode.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1451955660175" units="1" version="1.0"/>
+</session>

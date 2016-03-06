@@ -1,0 +1,36 @@
+package epicInterviewPreparation;
+
+public class possibleKeystrokeSequences {
+	
+	public static void main(String args[]){
+		Combination("","1234");
+	}
+	
+	
+	public static String[] keypad = {null, "vtfrq", "ftk","wxbg", "rs",null,"fir","p","lo","p"};
+	
+	public static void Combination(String prefix, String num){
+		if(num.length()==0) {
+            System.out.println(prefix);
+		}else {
+                
+                int x = Integer.parseInt(num.charAt(0)+"");
+                String temp = new String();
+                temp = keypad[x];
+                if(temp!=null)
+                {
+                    for(int j=0;j<temp.length();j++)
+                    {
+                         Combination(prefix+temp.charAt(j),num.substring(1,num.length()));
+                    } 
+                } else  {
+                    Combination(prefix,num.substring(1, num.length()));   
+		
+                }
+		}
+		
+		
+	}
+	
+	
+}

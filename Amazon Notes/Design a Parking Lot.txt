@@ -1,0 +1,8 @@
+Questions to Ask: 
+What types of vehicles it can support?
+Does the parking lot have multiple levels?
+
+
+Central Idea: The ParkingLot class is a wrapper class for an array of levels 
+Levels hold an array of parking spots 
+ParkingSpot is implemented by having just a variable which represents the size of the spot. 

@@ -1,0 +1,12 @@
+HashMap:
+An Implementation of the Map interface
+Stores data in form of key value pair
+Put method is used to add element in map
+In Hashmap hashcode value is calculated using key object 
+
+
+HashSet: 
+HashSet is an implementation of Set Interface
+Stores objects only 
+add method is used to add element is Set
+HashSet is slower than hashmap

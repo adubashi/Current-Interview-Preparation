@@ -1,0 +1,14 @@
+package epicInterviewPreparation;
+
+public class generateFourDigitNumbers {
+	
+	public static void main(String Args[]){
+		
+	}
+	
+	
+	public static void generate(String temp, int level){
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+Musical Jukebox:
+Questions to ask?
+What is this jukebox playing? CDs,Records,MP3s
+Does it cost money?
+Is this a simulation of a jukebox or a physical jukebox?
+Does it deliver change?
+
+
+Basic Components:
+1. Jukebox
+2. CD
+3. Song
+4. Artist 
+5. Playlist
+6. Display 
+
+public class Jukebox {
+	private CDPlayer cdPlayer;
+	private User user;
+	private Set<CD> cdCollection;
+	private SongSelector ts;
+	
+	public Jukebox(CDPlayer cdPlayer, User user, Set<CD> cdCollection, SongSelector ts);
+	public Song getCurrentSong();
+	public void setUser(User u);
+}

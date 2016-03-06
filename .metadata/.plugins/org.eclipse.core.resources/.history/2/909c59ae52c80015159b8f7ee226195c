@@ -1,0 +1,138 @@
+package blackRockInterview;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Question1 {
+	public static final String SEPARATOR = "@";
+	private static String[] benchmark;
+	
+	static class Transaction {
+	    //Transaction type, 
+	    private boolean transactionType;
+	    private String ticker;
+	    private double quantity;
+	    
+	    public String toString(){
+	    	String[] split = new String[3];
+	        if(transactionType){
+	            split[0] = "SELL";
+	        } else {
+	            split[0] = "BUY";
+	        }
+	       
+	        split[1] = ticker;
+	        split[2] = String.format( "%.2f", quantity);
+	        
+	        return Arrays.toString(split);
+	        
+	    }
+	}
+    /*
+     * Complete the function below.
+     *
+ 	 * Note: The questions in this test build upon each other. We recommend you
+	 * copy your solutions to your text editor of choice before proceeding to
+	 * the next question as you will not be able to revisit previous questions.
+	 */
+	
+	public static boolean containsSeparator(String input){
+		return input.contains(SEPARATOR);
+	}
+ 
+
+    public static int countHoldings(String input) {
+    	if(!containsSeparator(input)){
+    		return 0;
+    	}
+        return input.split(SEPARATOR).length;
+    }
+    
+    public static String[] holdings(String portfolioString){
+    	String[] inputArr = portfolioString.split(SEPARATOR);
+    	Arrays.sort(inputArr);
+    	return inputArr;
+    	
+    }
+    
+    static String printHoldingsNoBenchmark(String portfolioString) {
+    	if(portfolioString.length() < 2){
+    		return "";
+    	}
+    	//Get holdings
+    	String[] inputArr = holdings(portfolioString);
+    	for(int i = 0; i < inputArr.length;i++){
+    		inputArr[i] = Arrays.toString(inputArr[i].split(","));
+    	}
+    	
+    	//Remove end characters
+    	String finalString = removeEndCharacters(Arrays.toString(inputArr));
+        return finalString;
+    }
+    
+    public static String removeEndCharacters(String s){
+    	return s.substring(1, s.length()-1);
+    }
+    
+    static String printHoldings(String portfolioString) {
+    	String[] split = portfolioString.split(COLON);
+    	benchmark = holdings(split[1]);
+    	String portfolio = printHoldingsNoBenchmark(split[1]);
+    	
+        return portfolio;
+    }
+    
+    public static final String COLON = ":";
+    
+    /*
+     * Complete the function below.
+     *
+ 	 * Note: The questions in this test build upon each other. We recommend you
+	 * copy your solutions to your text editor of choice before proceeding to
+	 * the next question as you will not be able to revisit previous questions.
+	 */
+
+    static String generateTransactions(String input) {
+    	String[] split = input.split(COLON);
+    	
+    	//Get the holdings
+    	benchmark = holdings(split[1]);
+    	System.out.println(Arrays.toString(benchmark));
+    	String[] portfolio = holdings(split[0]);
+    	System.out.println(Arrays.toString(portfolio));
+    	
+    	//declare an array of transactions to the length of the benchmark
+        Transaction[] transactions = new Transaction[benchmark.length];
+        
+        for(int i = 0; i < transactions.length; i++){
+        	String[] holdingArray = holdings(portfolio[i]);
+        	String[] benchmarkArray = holdings(benchmark[i]);
+        	System.out.println(Arrays.toString(holdingArray));
+        	System.out.println(Arrays.toString(benchmarkArray));
+        	System.out.println(Arrays.toString(holdingArray));
+        	System.out.println(Arrays.toString(benchmarkArray));
+            System.out.println(quantity);
+        	
+        }
+        
+        System.out.println(Arrays.toString(transactions));
+        return "";    
+    }
+
+
+    public static void main(String[] args) throws IOException{
+        Scanner in = new Scanner(System.in);
+        String res;
+        String _input;
+        try {
+            _input = in.nextLine();
+        } catch (Exception e) {
+            _input = null;
+        }
+        res = generateTransactions(_input);
+        System.out.println(res);
+    }
+
+}

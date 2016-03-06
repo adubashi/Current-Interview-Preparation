@@ -1,0 +1,11 @@
+
+public class LinkedList {
+	
+	private class Node {
+		int data;
+		Node next;
+		
+		public Node(int _data)
+	}
+
+}

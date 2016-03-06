@@ -1,0 +1,33 @@
+Design A Chat Server:
+
+Questions to ask:
+
+1. What specific actions does it need to support?
+2. What can we learn about these requirements?
+3. What are the core components of the system?
+4. What are the key objects and methods?
+
+
+
+Class: UserManager
+-core user actions: add requests, add users, sign on, sign off
+
+
+sendAddRequest:
+
+1. User A clicks "add user" on the client and it gets sent to the server
+2. User A calls requestAddUser(User B)
+3. This method calls UserManager.addUser
+4. UserManager calls both User A. sentAddRequest and User B.receivedAddRequest
+
+
+End questions to ask:
+How do we know if someone is online?
+Can regularly ping the client to check 
+
+How do we deal with conflicting information?
+
+How do we make our server scale?
+Split the chat server across multiple servers
+
+How do we prevent denial of service attacks?

@@ -1,0 +1,5 @@
+Insertion in a BST worst case: O(H) where H is the Height of the tree. In a very skewed tree, 
+H could equal N, so the worst is O(N) in a skewed tree.
+
+
+Insertion in a HashMap worst case: O(N) in the worst case, if it degenerates into a linked list. It should amortize into O(1)
